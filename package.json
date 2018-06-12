@@ -1,0 +1,53 @@
+{
+  "name": "validate-cache",
+  "version": "0.1.0",
+  "description": "A Object and String validation for Cache-Control Header",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luanmuniz/validate-cache.git"
+  },
+  "engines": {
+    "yarn": "NO LONGER USED - Please use npm"
+  },
+  "author": "Luan Muniz <luan@luanmuniz.com.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luanmuniz/validate-cache/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "preversion": "git pull && rm -rf ./node_modules/ && npm install && npm test",
+    "postversion": "git push && npm publish --access=public && git push --tags",
+    "precommit-msg": "echo 'Pre-commit checks...'",
+    "postinstall": "bigbang update",
+    "test": "npm run eslint && npm run test-cov",
+    "eslint": "eslint --ignore-path .npmignore **/*.js --quiet",
+    "eslint:fix": "npm run eslint -- --fix",
+    "jest": "jest test --notify --config=jestrc.json",
+    "test-cov": "npm run jest -- --coverage",
+    "start": "node index.js",
+    "commit": "git-cz"
+  },
+  "pre-commit": [
+    "precommit-msg",
+    "test"
+  ],
+  "devDependencies": {
+    "commitizen": "2.10.1",
+    "cz-conventional-changelog": "2.1.0",
+    "eslint": "4.19.1",
+    "eslint-config-luanmuniz": "0.1.3",
+    "eslint-plugin-import": "2.12.0",
+    "eslint-plugin-jest": "21.17.0",
+    "jest": "23.1.0",
+    "jest-extended": "0.7.2",
+    "pre-commit": "1.2.2",
+    "rewire": "4.0.1"
+  },
+  "dependencies": {},
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

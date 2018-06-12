@@ -1,0 +1,64 @@
+# OS
+###########
+.DS_Store*
+.DS_Store
+.Spotlight-V100
+.Trashes
+._*
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Grunt/Compass/Node.js/NPM
+###########
+.sass-cache
+node_modules
+npm-debug.log
+jspm_packages
+.npm
+.node_repl_history
+package-lock.json
+
+# General
+###########
+.dropbox
+*.ini
+*.log
+*.cache
+backup/
+cache/
+.idea/
+
+# This app
+###########
+config.json
+config-env.json
+yarn-error
+.env
+.env*
+test.js
+emails-dist
+*production*
+
+# Logs
+###########
+logs
+*.log
+npm-debug.log*
+
+# General
+###########
+pids
+*.pid
+*.seed
+lib-cov
+coverage
+.nyc_output
+.lock-wscript
+build
+yarn.lock
+
+# Serverless directories
+###########
+.serverless
+_warmup

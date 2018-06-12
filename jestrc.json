@@ -1,0 +1,24 @@
+{
+  "verbose": true,
+  "bail": false,
+  "notify": true,
+  "notifyMode": "always",
+  "testMatch": [ "**/test/**/*.js", "**/__tests__/**/*.js?", "**/?(*.)+(spec|test).js?" ],
+  "setupTestFrameworkScriptFile": "jest-extended",
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!**/node_modules/**",
+    "!**/vendor/**",
+    "!**/templates/**",
+    "!**/coverage/**"
+  ],
+  "coverageDirectory": "coverage",
+  "coverageThreshold": {
+    "global": {
+      "branches": 100,
+      "functions": 100,
+      "lines": 100,
+      "statements": 100
+    }
+  }
+}
