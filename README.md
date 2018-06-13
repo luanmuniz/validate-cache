@@ -9,7 +9,7 @@ A Object and String validation for Cache-Control Header
 ## Installation
 
 ```shell
-$ npm install --save <%= repositoryName %>
+$ npm install --save validate-cache
 ```
 
 ## How it works
