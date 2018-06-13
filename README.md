@@ -38,5 +38,5 @@ Having trouble? Or new ideas? Post a new issue! We will be glad to help you!
 [nodei-url]: https://nodei.co/npm/validate-cache
 [node-image]: https://badge.fury.io/js/validate-cache.svg
 [node-url]: http://badge.fury.io/js/validate-cache
-[coverrals-image]: https://coveralls.io/repos/github/validate-cache/badge.svg?branch=master
-[coverrals-url]: https://coveralls.io/github/validate-cache?branch=master
+[coverrals-image]: https://coveralls.io/repos/github/luanmuniz/validate-cache/badge.svg?branch=master
+[coverrals-url]: https://coveralls.io/github/luanmuniz/validate-cache?branch=master
