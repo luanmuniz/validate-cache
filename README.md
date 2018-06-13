@@ -1,6 +1,6 @@
 Validate Cache
 =========
-[![Build Status][travis-image]][travis-url] [![Dependency Status][depstat-image]][depstat-url] [![NPM Version][node-image]][node-url] [![Coverage Status][coverrals-image]][coverrals-url]
+[![Build Status][circleci-image]][circleci-url] [![Dependency Status][depstat-image]][depstat-url] [![NPM Version][node-image]][node-url] [![Coverage Status][coverrals-image]][coverrals-url]
 
 [![Node Build][nodei-image]][nodei-url]
 
@@ -30,8 +30,8 @@ Having trouble? Or new ideas? Post a new issue! We will be glad to help you!
 
 [MIT License](https://gist.github.com/luanmuniz/aab4d433106ec340c1f3b861aff34748) © Luan Muniz
 
-[travis-url]: https://travis-ci.org/validate-cache
-[travis-image]: https://travis-ci.org/validate-cache.png?branch=master
+[circleci-url]: https://circleci.com/gh/luanmuniz/validate-cache
+[circleci-image]: https://circleci.com/gh/luanmuniz/validate-cache.svg?style=svg
 [depstat-url]: https://david-dm.org/validate-cache#info=devDependencies
 [depstat-image]: https://david-dm.org/validate-cache/dev-status.png
 [nodei-image]: https://nodei.co/npm/validate-cache.png
