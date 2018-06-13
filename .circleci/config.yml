@@ -4,22 +4,19 @@ jobs:
     working_directory: ~/ci-test
     docker:
       - image: node:8.10
-        environment:
-          NODE_ENV: production
-    environment:
-      NODE_ENV: production
 
     steps:
       - checkout
+      - restore_cache:
+          keys:
+          - dependencies-{{ checksum "package.json" }}
       - run:
           name: Install dependences
           command: npm install --silent
+      - save_cache:
+          paths:
+            - node_modules
+          key: dependencies-{{ checksum "package.json" }}
       - run:
           name: Run Tests
           command: npm test
-
-workflows:
-  version: 2
-  test:
-    jobs:
-      - build
