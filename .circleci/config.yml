@@ -20,3 +20,32 @@ jobs:
       - run:
           name: Run Tests
           command: npm test
+
+  sendToConveralls:
+    working_directory: ~/ci-coveralls
+    docker:
+      - image: node:8.10
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - dependencies-{{ checksum "package.json" }}
+      - run:
+          name: Install dependences
+          command: npm install --silent
+      - save_cache:
+          paths:
+            - node_modules
+          key: dependencies-{{ checksum "package.json" }}
+      - run:
+        name: Send to Converalls
+        command: npm run sendToConveralls
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - build
+      - sendToConveralls:
+          requires:
+            - build
