@@ -49,3 +49,7 @@ workflows:
       - sendToConveralls:
           requires:
             - build
+          filters:
+            branches:
+              only:
+                - master
