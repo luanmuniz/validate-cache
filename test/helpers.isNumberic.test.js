@@ -1,7 +1,7 @@
-const isNumeric = require('../index').testObject.isNumeric;
+const isNumeric = require('../lib/helpers').isNumeric;
 
 describe('isNumeric', () => {
-	it('should have a global isNumeric object', () => {
+	it('should have a global object', () => {
 		expect(isNumeric).toBeDefined();
 	});
 
@@ -19,6 +19,8 @@ describe('isNumeric', () => {
 	it('should return true and false for max / min numbers', () => {
 		expect(isNumeric(Number.MAX_VALUE)).toBeTruthy();
 		expect(isNumeric(Number.MIN_VALUE)).toBeFalsy();
+		expect(isNumeric(2147483648)).toBeTruthy(); // eslint-disable-line no-magic-numbers
+		expect(isNumeric(2147483649)).toBeTruthy(); // eslint-disable-line no-magic-numbers
 	});
 
 	it('should return true for hexadecimals', () => {
@@ -55,7 +57,7 @@ describe('isNumeric', () => {
 		expect(isNumeric('1,1,1,1')).toBeFalsy();
 	});
 
-	it('should return false for empty / whitespace',() => {
+	it('should return false for empty / whitespace', () => {
 		expect(isNumeric()).toBeFalsy();
 		expect(isNumeric('')).toBeFalsy();
 		expect(isNumeric('    ')).toBeFalsy();

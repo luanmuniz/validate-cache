@@ -26,7 +26,7 @@
     "jest": "jest test --notify --config=jestrc.json",
     "test-cov": "npm run jest -- --coverage",
     "start": "node index.js",
-    "commit": "git-cz",
+    "commit": "git cz -s",
     "sendToConveralls": "npm run test-cov -- --coverageReporters=text-lcov | coveralls"
   },
   "pre-commit": [

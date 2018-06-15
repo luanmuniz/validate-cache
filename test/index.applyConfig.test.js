@@ -1,7 +1,7 @@
 const applyConfig = require('../index').testObject.applyConfig;
 
 describe('applyConfig', () => {
-	it('Should have a global applyConfig object', () => {
+	it('Should have a global object', () => {
 		expect(applyConfig).toBeFunction();
 	});
 

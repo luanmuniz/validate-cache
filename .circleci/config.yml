@@ -29,7 +29,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-          - dependencies-{{ checksum "package.json" }}
+            - dependencies-{{ checksum "package.json" }}
       - run:
           name: Install dependences
           command: npm install --silent
@@ -38,8 +38,8 @@ jobs:
             - node_modules
           key: dependencies-{{ checksum "package.json" }}
       - run:
-        name: Send to Converalls
-        command: npm run sendToConveralls
+          name: Send to Converalls
+          command: npm run sendToConveralls
 
 workflows:
   version: 2
@@ -49,3 +49,7 @@ workflows:
       - sendToConveralls:
           requires:
             - build
+          filters:
+            branches:
+              only:
+                - master
