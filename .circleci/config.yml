@@ -38,8 +38,8 @@ jobs:
             - node_modules
           key: dependencies-{{ checksum "package.json" }}
       - run:
-        name: Send to Converalls
-        command: npm run sendToConveralls
+          name: Send to Converalls
+          command: npm run sendToConveralls
 
 workflows:
   version: 2
