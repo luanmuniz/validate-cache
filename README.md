@@ -1,5 +1,8 @@
 Validate Cache
 =========
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/luanmuniz/validate-cache.svg)](https://greenkeeper.io/)
+
 [![Build Status][circleci-image]][circleci-url] [![Dependency Status][depstat-image]][depstat-url] [![NPM Version][node-image]][node-url] [![Coverage Status][coverrals-image]][coverrals-url]
 
 [![Node Build][nodei-image]][nodei-url]
