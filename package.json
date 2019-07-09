@@ -42,7 +42,7 @@
     "eslint-plugin-import": "2.12.0",
     "eslint-plugin-jest": "21.27.1",
     "jest": "23.1.0",
-    "jest-extended": "0.7.2",
+    "jest-extended": "0.11.2",
     "pre-commit": "1.2.2",
     "rewire": "4.0.1"
   },
