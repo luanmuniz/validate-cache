@@ -44,7 +44,7 @@
     "jest": "23.1.0",
     "jest-extended": "0.7.2",
     "pre-commit": "1.2.2",
-    "rewire": "4.0.1"
+    "rewire": "5.0.0"
   },
   "dependencies": {},
   "config": {
